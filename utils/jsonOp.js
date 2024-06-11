@@ -24,6 +24,6 @@ const write = (file, data) => {
 }
 
 module.exports = {
-    readJSONFile, 
-    writeJSONFile
+    read, 
+    write
 }
