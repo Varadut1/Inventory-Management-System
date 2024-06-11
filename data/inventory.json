@@ -3,7 +3,7 @@
         "productId": "27f3251c-0666-4a7b-84d5-fcd819c9f230",
         "name": "Laptop",
         "type": "Electronics",
-        "quantity": 4,
+        "quantity": 3,
         "price": 78000
     },
     "e84b40a2-753e-4911-997f-fd83588e0dae": {
@@ -12,5 +12,12 @@
         "type": "Clothing",
         "quantity": 15,
         "price": 300
+    },
+    "31f639c9-85f4-4cba-add0-3dcba5142f42": {
+        "productId": "31f639c9-85f4-4cba-add0-3dcba5142f42",
+        "name": "shirts",
+        "type": "Clothing",
+        "quantity": 10,
+        "price": 400
     }
 }
