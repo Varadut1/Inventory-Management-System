@@ -21,7 +21,7 @@ exports.addItem = catchAsync(async(req, res, next) => {
         const err = new AppError('Some of this parameter (productId, name, quantity, price) not specified', 404);
         return err.transfer(res);
     }
-    const data = await Inventory.addItem( name, type, quantity);
+    const data = await Inventory.addItem( name, type, quantity, price);
     if(!data){ 
         const err = new AppError('Some Error occured!');
         return err.transfer(res);

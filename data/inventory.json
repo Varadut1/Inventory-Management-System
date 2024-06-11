@@ -1,1 +1,16 @@
-{}
+{
+    "27f3251c-0666-4a7b-84d5-fcd819c9f230": {
+        "productId": "27f3251c-0666-4a7b-84d5-fcd819c9f230",
+        "name": "Laptop",
+        "type": "Electronics",
+        "quantity": 4,
+        "price": 78000
+    },
+    "e84b40a2-753e-4911-997f-fd83588e0dae": {
+        "productId": "e84b40a2-753e-4911-997f-fd83588e0dae",
+        "name": "Tshirts",
+        "type": "Clothing",
+        "quantity": 15,
+        "price": 300
+    }
+}
