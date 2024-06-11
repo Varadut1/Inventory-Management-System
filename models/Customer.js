@@ -1,9 +1,10 @@
 const { read, write } = require('../utils/jsonOp');
 const filePath = '../data/customer.json';
+const { v4: uuidv4 } = require('uuid');
 
 class Customer {
     constructor() {
-        this.customers = read(filePath);
+        this.customers = read(filePath) || {};
     }
 
     async save() {
@@ -11,10 +12,12 @@ class Customer {
     }
 
     createCustomer(name, email, password) {
-        if(!this.customers[email]){
-            this.customers[email] = { name, email, password };
+        
+        if(!this.findCustomerByEmail(email)){
+            const customerId = uuidv4();
+            this.customers[customerId] = { name, email, password, customerId, role: 'customer'};
             this.save();
-            return true;
+            return this.customers[customerId];
         }
         else{
             return false;
@@ -22,9 +25,12 @@ class Customer {
     }
 
     findCustomerByEmail(email) {
-        return this.customers[email] || null;
+        return Object.values(this.customers).find(customer => customer.email === email) || null;
     }
-
+    findCustomerById(id){
+        if(this.customers[id])  return this.customers[id];
+        else return false;
+    }
     validateCustomer(email, password) {
         const customer = this.findCustomerByEmail(email);
         if (customer && customer.password === password) {

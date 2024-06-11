@@ -1,16 +1,1 @@
-{
-    "1": {
-        "name": "Headphones",
-        "quantity": 7,
-        "type": "Electronics"
-    },
-    "2": {
-        "name": "Laptop",
-        "quantity": 5,
-        "type": "Electronics"
-    },
-    "3": {
-        "name": "Tshirts",
-        "type": "Clothing"
-    }
-}
+{}

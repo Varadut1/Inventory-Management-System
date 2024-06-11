@@ -10,7 +10,7 @@ class Cart {
     save() {
         write(filePath, this.carts);
     }
-
+//
     addItem(customerId, productId, quantity) {
         if (!this.carts[customerId]) {
             this.carts[customerId] = {};
@@ -21,19 +21,30 @@ class Cart {
             this.carts[customerId][productId] = quantity;
         }
         this.save();
+        return {productId: quantity};
     }
 
     getCart(customerId) {
-        return this.carts[customerId] || {};
+        let data = []
+        if(this.carts[customerId]){
+            for(const key in this.carts[customerId]){
+                const name = Inventory.getItemById(key)['name'];
+                const type = Inventory.getItemById(key)['type'];
+                const quant = this.carts[customerId][key];
+                const el = {
+                    name,type,quant
+                }
+                data.push(el);
+            }
+        }
+        return data;
     }
 
     getTotalValue(customerId) {
-        const cart = this.getCart(customerId);
+        const cart = this.carts[customerId];
         let totalValue = 0;
         for (const productId in cart) {
-            if (cart.hasOwnProperty(productId)) {
-                totalValue += Inventory.getQuantity(productId) * cart[productId];
-            }
+            totalValue += Inventory.getPrice(productId) * cart[productId];
         }
         return totalValue;
     }
