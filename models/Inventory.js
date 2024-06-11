@@ -18,6 +18,7 @@ class Inventory {
             this.items[productId] = {name, quantity, type};
         }
         this.save();
+        return true;
     }
     removeItem(productId, quantity){
         if(this.items[productId]){
@@ -30,6 +31,9 @@ class Inventory {
         }
         this.save();
         return this.items[productId];
+    }
+    getItems(){
+        return this.items;
     }
     getQuantity(productId){
         return this.items[productId] ? this.items[productId].quantity : 0;
