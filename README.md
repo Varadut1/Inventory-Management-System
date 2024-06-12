@@ -24,35 +24,37 @@ This is an Inventory and Cart Management System built using Node.js and Express.
 
 ## Project Structure
 
-├── controllers
-│ ├── authController.js
-│ ├── cartController.js
-│ ├── discountController.js
-│ └── inventoryController.js
-├── data
-│ ├── cart.json
-│ ├── customers.json
-│ ├── discounts.json
-│ └── inventory.json
-├── middleware
-│ └── authMiddleware.js
-├── models
-│ ├── Cart.js
-│ ├── Customer.js
-│ ├── Discount.js
-│ └── Inventory.js
-├── routes
-│ ├── authRoutes.js
-│ ├── cartRoutes.js
-│ ├── discountRoutes.js
-│ └── inventoryRoutes.js
-├── utils
-│ ├── appError.js
-│ ├── catchAsync.js
-│ ├── jsonOp.js
-│ └── tokenUtils.js
-├── app.js
-└── server.js
+-├── controllers # Controller logic for different entities
+-│ ├── customerController.js # Handles customer authentication
+-│ ├── cartController.js # Manages cart operations
+-│ ├── discountController.js # Manages discount operations
+-│ └── inventoryController.js # Manages inventory operations
+-│
+-├── data # JSON files for data storage
+-│ ├── cart.json # Stores cart information
+-│ ├── customers.json # Stores customer information
+-│ ├── discounts.json # Stores discount information
+-│ └── inventory.json # Stores inventory information
+-│
+-├── models # Data models
+-│ ├── Cart.js # Cart model
+-│ ├── Customer.js # Customer model
+-│ ├── Discount.js # Discount model
+-│ └── Inventory.js # Inventory model
+-│
+-├── routes # API routes
+-│ ├── customerRoutes.js # Routes for authentication
+-│ ├── cartRoutes.js # Routes for cart operations
+-│ ├── discountRoutes.js # Routes for discount operations
+-│ └── inventoryRoutes.js # Routes for inventory operations
+-│
+-├── utils # Utility functions
+-│ ├── appError.js # Custom error handling
+-│ ├── catchAsync.js # Async error handling
+-│ ├── jsonOp.js # JSON file operations
+-│
+-├── app.js # Application setup
+-└── server.js # Server setup and configuration
 
 
 
