@@ -24,41 +24,41 @@ This is an Inventory and Cart Management System built using Node.js and Express.
 
 ## Project Structure
 
--├── controllers # Controller logic for different entities<br>
--│ ├── customerController.js # Handles customer authentication<br>
--│ ├── cartController.js # Manages cart operations<br>
--│ ├── discountController.js # Manages discount operations<br>
--│ └── inventoryController.js # Manages inventory operations<br>
--│<br>
--├── data # JSON files for data storage<br>
--│ ├── cart.json # Stores cart information<br>
--│ ├── customers.json # Stores customer information<br>
--│ ├── discounts.json # Stores discount information<br>
--│ └── inventory.json # Stores inventory information<br>
--│<br>
--├── middleware # Middleware functions<br>
--│ └── authMiddleware.js # Middleware for authentication<br>
--│<br>
--├── models # Data models<br>
--│ ├── Cart.js # Cart model<br>
--│ ├── Customer.js # Customer model<br>
--│ ├── Discount.js # Discount model<br>
--│ └── Inventory.js # Inventory model<br>
--│<br>
--├── routes # API routes<br>
--│ ├── customerRoutes.js # Routes for authentication<br>
--│ ├── cartRoutes.js # Routes for cart operations<br>
--│ ├── discountRoutes.js # Routes for discount operations<br>
--│ └── inventoryRoutes.js # Routes for inventory operations<br>
--│<br>
--├── utils # Utility functions<br>
--│ ├── appError.js # Custom error handling<br>
--│ ├── catchAsync.js # Async error handling<br>
--│ ├── jsonOp.js # JSON file operations<br>
--│ └── tokenUtils.js # JWT token utilities<br>
--│<br>
--├── app.js # Application setup<br>
--└── server.js # Server setup and configuration<br>
+  ├── controllers # Controller logic for different entities<br>
+  │ ├── customerController.js # Handles customer authentication<br>
+  │ ├── cartController.js # Manages cart operations<br>
+  │ ├── discountController.js # Manages discount operations<br>
+  │ └── inventoryController.js # Manages inventory operations<br>
+  │<br>
+  ├── data # JSON files for data storage<br>
+  │ ├── cart.json # Stores cart information<br>
+  │ ├── customers.json # Stores customer information<br>
+  │ ├── discounts.json # Stores discount information<br>
+  │ └── inventory.json # Stores inventory information<br>
+  │<br>
+  ├── middleware # Middleware functions<br>
+  │ └── authMiddleware.js # Middleware for authentication<br>
+  │<br>
+  ├── models # Data models<br>
+  │ ├── Cart.js # Cart model<br>
+  │ ├── Customer.js # Customer model<br>
+  │ ├── Discount.js # Discount model<br>
+  │ └── Inventory.js # Inventory model<br>
+  │<br>
+  ├── routes # API routes<br>
+  │ ├── customerRoutes.js # Routes for authentication<br>
+  │ ├── cartRoutes.js # Routes for cart operations<br>
+  │ ├── discountRoutes.js # Routes for discount operations<br>
+  │ └── inventoryRoutes.js # Routes for inventory operations<br>
+  │<br>
+  ├── utils # Utility functions<br>
+  │ ├── appError.js # Custom error handling<br>
+  │ ├── catchAsync.js # Async error handling<br>
+  │ ├── jsonOp.js # JSON file operations<br>
+  │ └── tokenUtils.js # JWT token utilities<br>
+  │<br>
+  ├── app.js # Application setup<br>
+  └── server.js # Server setup and configuration<br>
 
 
 ## Getting Started
