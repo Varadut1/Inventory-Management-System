@@ -1,13 +1,13 @@
 # Inventory Management System
 
 ### Deployed API URL
-[Link API](inventory-management-system-git-8c5eeb-varads-projects-6d4aa35c.vercel.app/)
+[API](inventory-management-system-git-8c5eeb-varads-projects-6d4aa35c.vercel.app/)
 
 ### Published Documentation
-[Link Documentation](https://documenter.getpostman.com/view/24278561/2sA3XMjj8g)
+[Documentation](https://documenter.getpostman.com/view/24278561/2sA3XMjj8g)
 
 ### Postman Collection URL
-[Link Postman_Collection](https://blue-shuttle-105097.postman.co/workspace/Team-Workspace~920b85c8-469d-4eb0-80b9-48b57ece57ed/collection/24278561-e0c11c9b-da6c-4440-91ca-cef553f633c2?action=share&creator=24278561&active-environment=24278561-b9f18ddc-cff2-4933-97f8-7aafa5701c16)
+[Postman_Collection](https://blue-shuttle-105097.postman.co/workspace/Team-Workspace~920b85c8-469d-4eb0-80b9-48b57ece57ed/collection/24278561-e0c11c9b-da6c-4440-91ca-cef553f633c2?action=share&creator=24278561&active-environment=24278561-b9f18ddc-cff2-4933-97f8-7aafa5701c16)
 
 ## Overview
 
