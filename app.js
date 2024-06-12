@@ -11,6 +11,7 @@ const cart = require('./routes/cartRoutes');
 const discount = require('./routes/discountRoutes');
 const customer = require('./routes/customerRoutes');
 const root = require('./routes/rootRoutes');
+const root = require('./error/errorRoutes');
 
 app.use(bodyParser.json());
 
@@ -19,5 +20,6 @@ app.use('/cart', cart);
 app.use('/discount', discount);
 app.use('/customer', customer);
 app.use('/', root);
+app.use('/error', error);
 
 module.exports = app;
