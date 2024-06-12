@@ -1,9 +1,16 @@
 {
     "078ef978-47ee-4057-8da5-44e266259346": {
-        "name": "Varad Uttarwar",
+        "name": "Varad1",
         "email": "varad@123.com",
         "password": 12345,
         "customerId": "078ef978-47ee-4057-8da5-44e266259346",
+        "role": "admin"
+    },
+    "078ef978-47ee-4057-8da5-44e266259834": {
+        "name": "Varad2",
+        "email": "varad@1234.com",
+        "password": 12345,
+        "customerId": "078ef978-47ee-4057-8da5-44e266259834",
         "role": "admin"
     }
 }
