@@ -5,7 +5,7 @@ const controller = require('../controllers/inventoryController');
 
 router.use(protect)
 router.get('/', controller.getItem);
-router.post('/', controller.addItem);
+router.post('/', restrictTo('admin'), controller.addItem);
 router.delete('/:productId', restrictTo('admin'), controller.removeItem);
 
 module.exports = router;
