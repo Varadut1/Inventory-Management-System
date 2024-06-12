@@ -47,7 +47,7 @@ exports.signIn = catchAsync(async (req, res) => {
       const err = new AppError('Please provide email and password!', 400);
       return err.transfer(res);
     }
-    const customer = Customer.validateCustomer(email, password);
+    const customer = await Customer.validateCustomer(email, password);
     if (customer) {
       createSendToken(customer, 200, res);
     } else {

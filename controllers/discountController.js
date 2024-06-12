@@ -42,7 +42,7 @@ exports.applyDiscount = catchAsync(async(req, res) => {
 
 
 exports.getDiscount = async (req, res) => {
-    const data = Discount.getAllDiscount();
+    const data = await Discount.getAllDiscount();
     if(!data){
         const err = new AppError('No discounts available', 404);
         err.transfer(res);
