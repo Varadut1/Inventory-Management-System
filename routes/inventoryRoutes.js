@@ -3,9 +3,9 @@ const router = express.Router();
 const { protect } = require('../controllers/customerController');
 const controller = require('../controllers/inventoryController');
 
-router.get('/', controller.getItem)
-router.post('/', controller.addItem);
 router.use(protect)
+router.get('/', controller.getItem);
+router.post('/', controller.addItem);
 router.delete('/:productId', controller.removeItem);
 
 module.exports = router;
