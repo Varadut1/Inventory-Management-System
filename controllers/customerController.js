@@ -91,9 +91,6 @@ exports.restrictTo = (...roles) => {
 exports.getCustomer = catchAsync(async (req, res) => {
     const data1 = await Customer.getCustomers();
     const data = {...data1}
-    for (const key in data) {
-        data[key].password = undefined;
-    }
     if (!data) {
         const err = new AppError('No customers found', 404);
         return err.transfer(res);
