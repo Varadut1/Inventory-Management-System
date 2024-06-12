@@ -38,6 +38,9 @@ class Customer {
         }
         return null;
     }
+    getCustomers(){
+        return this.customers;
+    }
 }
 
 module.exports = new Customer();

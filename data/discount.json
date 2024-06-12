@@ -1,12 +1,1 @@
-{
-    "5decb34d-f88b-48ce-8ce3-4e1710977309": {
-        "discountId": "5decb34d-f88b-48ce-8ce3-4e1710977309",
-        "percentage": 20,
-        "maxCap": 180
-    },
-    "bb8e7f6e-970f-4f8a-ae6e-d009713f79b0": {
-        "discountId": "bb8e7f6e-970f-4f8a-ae6e-d009713f79b0",
-        "percentage": 20,
-        "maxCap": 180
-    }
-}
+{}

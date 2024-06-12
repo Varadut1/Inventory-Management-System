@@ -12,5 +12,19 @@
         "password": 12345,
         "customerId": "078ef978-47ee-4057-8da5-44e266259834",
         "role": "admin"
+    },
+    "a7737580-e997-4629-86d0-24f47065deb9": {
+        "name": "Varad3",
+        "email": "varaduttarwar535@gmail.com",
+        "password": 12345,
+        "customerId": "a7737580-e997-4629-86d0-24f47065deb9",
+        "role": "customer"
+    },
+    "bb176898-648d-4fbb-b2af-4aaa7955fe64": {
+        "name": "Varad4",
+        "email": "varaduttarwar5353@gmail.com",
+        "password": 12345,
+        "customerId": "bb176898-648d-4fbb-b2af-4aaa7955fe64",
+        "role": "customer"
     }
 }

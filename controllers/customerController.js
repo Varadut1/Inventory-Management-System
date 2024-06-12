@@ -89,3 +89,18 @@ exports.restrictTo = (...roles) =>{
       next();
   }
 }
+
+exports.getCustomer = catchAsync(async(req, res) =>{
+  const data = await Customer.getCustomers();
+  for(const key in data){
+    data[key].password = undefined;
+  }
+  if(!data){
+    const err = new AppError('No customers found', 404);
+    return err.transfer(res);
+  }
+  res.status(200).json({
+    status: 'success',
+    data
+    });
+})

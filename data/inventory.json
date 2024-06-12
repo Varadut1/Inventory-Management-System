@@ -1,16 +1,1 @@
-{
-    "2b2a47a7-5cd6-40aa-9d23-2c3c8d546752": {
-        "productId": "2b2a47a7-5cd6-40aa-9d23-2c3c8d546752",
-        "name": "socks",
-        "type": "Clothing",
-        "quantity": 20,
-        "price": 30
-    },
-    "659767b9-532b-4b89-ba2b-dce62fbec8bd": {
-        "productId": "659767b9-532b-4b89-ba2b-dce62fbec8bd",
-        "name": "TV",
-        "type": "Electronics",
-        "quantity": 2,
-        "price": 30000
-    }
-}
+{}
