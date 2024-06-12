@@ -36,9 +36,6 @@ This is an Inventory and Cart Management System built using Node.js and Express.
   │ ├── discounts.json # Stores discount information<br>
   │ └── inventory.json # Stores inventory information<br>
   │<br>
-  ├── middleware # Middleware functions<br>
-  │ └── authMiddleware.js # Middleware for authentication<br>
-  │<br>
   ├── models # Data models<br>
   │ ├── Cart.js # Cart model<br>
   │ ├── Customer.js # Customer model<br>
@@ -55,7 +52,6 @@ This is an Inventory and Cart Management System built using Node.js and Express.
   │ ├── appError.js # Custom error handling<br>
   │ ├── catchAsync.js # Async error handling<br>
   │ ├── jsonOp.js # JSON file operations<br>
-  │ └── tokenUtils.js # JWT token utilities<br>
   │<br>
   ├── app.js # Application setup<br>
   └── server.js # Server setup and configuration<br>
