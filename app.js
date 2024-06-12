@@ -11,7 +11,7 @@ const cart = require('./routes/cartRoutes');
 const discount = require('./routes/discountRoutes');
 const customer = require('./routes/customerRoutes');
 const root = require('./routes/rootRoutes');
-const root = require('./error/errorRoutes');
+const root = require('./routes/errorRoutes');
 
 app.use(bodyParser.json());
 
