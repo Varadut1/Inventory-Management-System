@@ -10,6 +10,7 @@ const inventory = require('./routes/inventoryRoutes');
 const cart = require('./routes/cartRoutes');
 const discount = require('./routes/discountRoutes');
 const customer = require('./routes/customerRoutes');
+const root = require('./routes/rootRoutes');
 
 app.use(bodyParser.json());
 
@@ -17,5 +18,6 @@ app.use('/inventory', inventory);
 app.use('/cart', cart);
 app.use('/discount', discount);
 app.use('/customer', customer);
+app.use('/', root);
 
 module.exports = app;
