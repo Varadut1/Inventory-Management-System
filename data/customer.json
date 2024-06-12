@@ -1,18 +1,4 @@
 {
-    "078ef978-47ee-4057-8da5-44e266259346": {
-        "name": "Varad1",
-        "email": "varad@123.com",
-        "password": 12345,
-        "customerId": "078ef978-47ee-4057-8da5-44e266259346",
-        "role": "admin"
-    },
-    "078ef978-47ee-4057-8da5-44e266259834": {
-        "name": "Varad2",
-        "email": "varad@1234.com",
-        "password": 12345,
-        "customerId": "078ef978-47ee-4057-8da5-44e266259834",
-        "role": "admin"
-    },
     "a7737580-e997-4629-86d0-24f47065deb9": {
         "name": "Varad3",
         "email": "varaduttarwar535@gmail.com",
@@ -26,5 +12,21 @@
         "password": 12345,
         "customerId": "bb176898-648d-4fbb-b2af-4aaa7955fe64",
         "role": "customer"
+    },
+    "53b04cc3-2ce7-4bbb-980f-e7aaebe2e54d": {
+        "name": "Varad1",
+        "email": "varad@123.com",
+        "password": 12345,
+        "customerId": "53b04cc3-2ce7-4bbb-980f-e7aaebe2e54d",
+        "role": "admin",
+        "authority": "YES"
+    },
+    "59e7990f-6fa1-49d7-8f0a-75a13f101492": {
+        "name": "Varad2",
+        "email": "varad@1234.com",
+        "password": 12345,
+        "customerId": "59e7990f-6fa1-49d7-8f0a-75a13f101492",
+        "role": "admin",
+        "authority": "YES"
     }
 }

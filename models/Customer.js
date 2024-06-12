@@ -11,11 +11,14 @@ class Customer {
         await write(filePath, this.customers);
     }
 
-    createCustomer(name, email, password) {
+    createCustomer(name, email, password, role, authority) {
         
         if(!this.findCustomerByEmail(email)){
             const customerId = uuidv4();
-            this.customers[customerId] = { name, email, password, customerId, role: 'customer'};
+            this.customers[customerId] = { name, email, password, customerId, role: role || 'customer'};
+            if(role === 'admin'){
+                this.customers[customerId].authority = authority;
+            }
             this.save();
             return this.customers[customerId];
         }

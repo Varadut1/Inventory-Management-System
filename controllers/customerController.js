@@ -13,6 +13,7 @@ const signToken = customerId => {
   
 const createSendToken = (customer, statusCode, res) => {
     const token = signToken(customer.customerId);
+    customer.password = undefined;
     res.status(statusCode).json({
       status: 'success',
       token,
@@ -22,7 +23,6 @@ const createSendToken = (customer, statusCode, res) => {
     });
   };
 
-
 exports.signup = catchAsync(async(req, res, next) => {
     const { name, email, password, role } = req.body;
     if (!email || !password || !name) {
@@ -30,7 +30,7 @@ exports.signup = catchAsync(async(req, res, next) => {
       return err.transfer(res);
     }
     if(role){
-      const err = new AppError('You are not authorized to set roles', 400);
+      const err = new AppError('You are not authorized to set roles here', 400);
       return err.transfer(res);
     }
     const customer = await Customer.createCustomer(name, email, password);
@@ -103,4 +103,22 @@ exports.getCustomer = catchAsync(async(req, res) =>{
     status: 'success',
     data
     });
+})
+
+exports.addAdmin = catchAsync(async(req, res)=> {
+  const { name, email, password, authority } = req.body;
+    if (!email || !password || !name) {
+      const err = new AppError('Please provide email, password and name!', 400);
+      return err.transfer(res);
+    }
+    if(authority!=='YES'){
+      const err = new AppError("Without Providing authority to be admin i.e., 'authority': 'YES' You cannot be an admin!", 401);
+      return err.transfer(res);
+    }
+    const customer = await Customer.createCustomer(name, email, password, 'admin', authority);
+    if(!customer){
+      const err = new AppError('Cannot create new Admin because customer/admin with same Mail already exists!', 400);
+      return err.transfer(res);
+    }
+    createSendToken(customer, 201, res);
 })
