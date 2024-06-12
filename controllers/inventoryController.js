@@ -33,7 +33,8 @@ exports.addItem = catchAsync(async(req, res, next) => {
 });
 
 exports.removeItem = catchAsync(async(req, res) => {
-    const { productId, quantity } = req.body;
+    const { quantity } = req.body;
+    const productId = req.params.productId;
     if(!productId || !quantity){
         const err = new AppError('Some of this parameter (productId, quantity) not specified', 400)
         return err.transfer(res);

@@ -1,1 +1,9 @@
-{}
+{
+    "471ca349-e4d2-427b-9d6e-2efbcfc8114b": {
+        "productId": "471ca349-e4d2-427b-9d6e-2efbcfc8114b",
+        "name": "Mobile Phone",
+        "type": "Electronics",
+        "quantity": 10,
+        "price": 15000
+    }
+}

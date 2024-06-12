@@ -19,7 +19,7 @@ exports.createDiscount = async (req, res) => {
 };
 
 exports.applyDiscount = catchAsync(async(req, res) => {
-    const { discountId } = req.body;
+    const discountId = req.params.discountId;
     const cartValue = await Cart.getTotalValue(req.customer.customerId);
     console.log(req.customer)
     if(cartValue<=0){

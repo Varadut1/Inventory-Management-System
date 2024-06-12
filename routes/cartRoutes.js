@@ -5,6 +5,6 @@ const controller = require('../controllers/cartController');
 
 router.use(protect)
 router.get('/', controller.getItems);
-router.post('/', controller.addItem);
+router.post('/:productId', controller.addItem);
 
 module.exports = router;

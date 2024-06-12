@@ -4,7 +4,8 @@ const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 
 exports.addItem = catchAsync(async(req, res) => {
-    const { productId, quantity } = req.body;
+    const { quantity } = req.body;
+    const productId = req.params.productId;
     const customerId = req.customer.customerId
     if (Inventory.getQuantity(productId) >= quantity) {
         console.log(customerId, productId, quantity)
