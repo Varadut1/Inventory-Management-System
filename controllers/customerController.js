@@ -13,7 +13,7 @@ const signToken = customerId => {
 const createSendToken = (customer, statusCode, res) => {
     const token = signToken(customer.customerId);
     let copycustomer = { ...customer }
-    copycustomer.password = undefined;
+
     res.status(statusCode).json({
         status: 'success',
         token,
