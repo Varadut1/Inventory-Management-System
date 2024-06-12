@@ -7,15 +7,15 @@ exports.addItem = catchAsync(async(req, res) => {
     const { productId, quantity } = req.body;
     const customerId = req.customer.customerId
     if (Inventory.getQuantity(productId) >= quantity) {
+        console.log(customerId, productId, quantity)
         const added_product = await Cart.addItem(customerId, productId, quantity);
         if(!added_product){
-            const err = new AppError('Provided ProductId or CustomerId is not correct, Please Recheck it!', 400);
+            const err = new AppError('Provided ProductId or CustomerId is not correct or not enough stock to add in cart, Please Recheck it!', 400);
+            return err.transfer(res);
         }
-        const remaining_product = await Inventory.removeItem(productId, quantity);
         res.status(200).json({
             status: 'success',
-            added_product,
-            remaining_product
+            added_product
         });
     } else {
         res.status(400).json({
@@ -24,6 +24,7 @@ exports.addItem = catchAsync(async(req, res) => {
         });
 
     }
+    // res.status(200).json({})
 });
 
 exports.getItems = async(req, res) => {

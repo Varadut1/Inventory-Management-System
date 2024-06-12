@@ -1,23 +1,9 @@
 {
-    "078ef978-47ee-4057-8da5-44e266259128": {
-        "name": "Varad Uttarwar",
-        "email": "varad.uttarwar21@vit.edu",
-        "password": 12345,
-        "customerId": "078ef978-47ee-4057-8da5-44e266259128",
-        "role": "customer"
-    },
     "078ef978-47ee-4057-8da5-44e266259346": {
         "name": "Varad Uttarwar",
         "email": "varad@123.com",
         "password": 12345,
         "customerId": "078ef978-47ee-4057-8da5-44e266259346",
         "role": "admin"
-    },
-    "63e2aac4-3e00-4b42-a455-7ab8d2f04d36": {
-        "name": "Varad Uttarwar",
-        "email": "varad.uttadrwar21@vit.edu",
-        "password": 12345,
-        "customerId": "63e2aac4-3e00-4b42-a455-7ab8d2f04d36",
-        "role": "customer"
     }
 }
