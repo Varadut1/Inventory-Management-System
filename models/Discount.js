@@ -21,6 +21,9 @@ class Discount {
     getDiscount(discountId) {
         return this.discounts[discountId] || null;
     }
+    getAllDiscount(){
+        return this.discounts;
+    }
 }
 
 module.exports = new Discount();

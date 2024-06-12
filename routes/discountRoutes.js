@@ -6,5 +6,6 @@ const { protect, restrictTo } = require('../controllers/customerController');
 router.use(protect);
 router.post('/', restrictTo('admin'), discountController.createDiscount);
 router.post('/apply', discountController.applyDiscount);
+router.get('/', discountController.getDiscount);
 
 module.exports = router;

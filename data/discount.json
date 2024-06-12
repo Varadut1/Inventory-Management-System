@@ -1,1 +1,7 @@
-{}
+{
+    "99a785fe-aa64-41f6-8530-cd900b154ded": {
+        "discountId": "99a785fe-aa64-41f6-8530-cd900b154ded",
+        "percentage": 20,
+        "maxCap": 180
+    }
+}
