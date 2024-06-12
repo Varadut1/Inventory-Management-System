@@ -1,7 +1,7 @@
 # Inventory Management System
 
 ### Deployed API URL
-[API](inventory-management-system-git-8c5eeb-varads-projects-6d4aa35c.vercel.app/)
+[API](https://inventory-management-system-git-8c5eeb-varads-projects-6d4aa35c.vercel.app/)
 
 ### Published Documentation
 [Documentation](https://documenter.getpostman.com/view/24278561/2sA3XMjj8g)
